@@ -1,0 +1,28 @@
+   <!-- Textured plane parallel to ground. -->
+<a-plane color="black" height="100" width="100" rotation="-90 0 0"></a-plane>
+</a-scene>
+<a-plane color="black" height="100" width="100" rotation="-90 0 0"></a-plane>
+<a-sky color="#6EBAA7"></a-sky>
+<audio src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay
+preload>
+</audio>
+<!-- Red directional light shining from the top left. -->
+<a-light color="red" position="-1 1 0"></a-light>
+
+<!-- Blue point light, 5 meters in the air. -->
+<a-light type="point" color="blue" position="0 5 0"></a-light>
+
+<!-- Dim ambient lighting. -->
+<a-light type="ambient" color="#222"></a-light>
+
+<a-assets>
+<video id="penguin-sledding" autoplay loop="true" src="penguin-sledding.mp4"></video>
+</a-assets>
+
+<!-- Using the asset management system. -->
+<a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
+
+<!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+<a-video src="airbending.mp4"></a-video>
+
+
